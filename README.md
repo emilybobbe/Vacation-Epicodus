@@ -6,7 +6,7 @@
 
 ## Description
 
-_This is vacation recommendation quiz built using HTML, Bootstrap, and JS. I made commits regularly to ensure accurate details were being reported._
+_This is a vacation recommendation quiz built using HTML, Bootstrap, and JS. I made commits regularly to ensure accurate details were being reported._
 
 ## Setup/Installation Requirements
 
