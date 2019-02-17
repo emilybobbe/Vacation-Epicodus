@@ -13,6 +13,7 @@
       <h1>Vacation Quiz!</h1>
       <p>Feeling tired from work and wanting to plan your next vacation? Take the quiz below to see where you should go!</p>
       <form id="content">
+        <h2>It's Friday night and you are craving...</h2>
           <div class="radio">
             <label>
               <input type="radio" name="food" value="pizza" checked>
@@ -21,8 +22,8 @@
           </div>
           <div class="radio">
             <label>
-              <input type="radio" name="food" value="sushi">
-              Sushi
+              <input type="radio" name="food" value="Nachos">
+              Nachos
             </label>
           </div>
           <div class="radio">
@@ -34,34 +35,52 @@
           </select>
         </div>
 
-        <div class="form-group">
-          <label for="date">Appointment date:</label>
-          <input id="date" class="form-control" type="date">
-        </div>
+        <form id="content">
+          <h2>What is your go-to karaoke song?</h2>
+            <div class="radio">
+              <label>
+                <input type="radio" name="song" value="amore" checked>
+                That's Amore by Dean Martin
+              </label>
+            </div>
+            <div class="radio">
+              <label>
+                <input type="radio" name="song" value="tequila">
+                Tequila by The Champs
+              </label>
+            </div>
+            <div class="radio">
+              <label>
+                <input type="radio" name="song" value="beatles">
+                Any Beatles song
+              </label>
+            </div>
+            </select>
+          </div>
 
-        <div class="form-group">
-          <select class="form-control" id="time">
-          <label for="time">Please select appointment window:</label>
-          <option value="9AM - 11AM">9AM - 11AM</option>
-          <option value="12PM - 1:30PM">12PM - 1:30PM</option>
-          <option value="2PM - 3PM">2PM - 3PM</option>
-          <option value="3PM - 5PM">3PM - 5PM</option>
-          </select>
-      </div>
+          <form id="content">
+            <h2>What is your ideal activity for a vacation?</h2>
+              <div class="radio">
+                <label>
+                  <input type="radio" name="activity" value="eating" checked>
+                  Eating alllll of the foods
+                </label>
+              </div>
+              <div class="radio">
+                <label>
+                  <input type="radio" name="activity" value="snorkle">
+                  Snorkling in the ocean
+                </label>
+              </div>
+              <div class="radio">
+                <label>
+                  <input type="radio" name="activity" value="museum">
+                  Visiting musuems
+                </label>
+              </div>
+              </select>
+            </div>
 
-      <button type="submit" name="button">Book Appointment</button>
-
-      </form>
-
-
-      <div id="appointment">
-      <h1>Appointment Details</h1>
-          <p>Name: <span class="name"></span><br>
-            Service: <span class="service"></span><br>
-            Date: <span class="date"></span><br>
-            Time: <span class="time"></span></p>
-
-      </div>
   </div>
   </body>
 </html>
