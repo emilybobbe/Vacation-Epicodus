@@ -8,7 +8,7 @@ var add = function(eat, sweet, song, transit, fun) {
 
 $(document).ready(function() {
   console.log("Hello!")
-  $("form#favoriteColor").submit(function(event) {
+  $("form#content").submit(function(event) {
     event.preventDefault();
     var eat = parseInt($("input:radio[name=eat]:checked").val());
     //console.log(color)
