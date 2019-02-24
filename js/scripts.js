@@ -19,13 +19,13 @@ $(document).ready(function() {
     var result = add(eat, sweet, sing, transit, fun);
     console.log(result)
     if (result <= 8) {
-      $("#resultBeer").text("England");
+      $("#finalTrip").text("England! Tell the Queen I say hello!");
     } else if (result <= 15) {
 
-      $("#resultBeer").text("Italy");
+      $("#finalTrip").text("Italy! Eat some pasta for me!");
     } else if (result <= 25) {
 
-      $("#resultBeer").text("Mexico");
+      $("#finalTrip").text("Mexico! Don't forget the sunblock!");
     }
 
   });
