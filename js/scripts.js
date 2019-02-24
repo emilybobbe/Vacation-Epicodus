@@ -19,13 +19,13 @@ $(document).ready(function() {
     var result = add(eat, sweet, sing, transit, fun);
     console.log(result)
     if (result <= 8) {
-      $("#resultBeer").text("You're sippin' on a Pilsner!");
+      $("#resultBeer").text("England");
     } else if (result <= 15) {
 
-      $("#resultBeer").text("You're sippin' on an IPA!");
+      $("#resultBeer").text("Italy");
     } else if (result <= 25) {
 
-      $("#resultBeer").text("You're sippin' on an Imperial Stout!");
+      $("#resultBeer").text("Mexico");
     }
 
   });
