@@ -1,24 +1,49 @@
-$(document).ready(function(){
-  $("#content").submit(function(){
-    var food = $("input:radio[name=food]:checked").val();
-    // console.log(foodInput);
-    var dessert = $("input:radio[name=dessert]:checked").val();
-    // console.log(dessert);
-    var song = $("input:radio[name=song]:checked").val();
-    // console.log(song);
-    var travel = $("input:radio[name=travel]:checked").val();
-    // console.log(dessert);
-    var activity = $("input:radio[name=activity]:checked").val();
-    // console.log(dessert);
 
-    // $(".name").text(nameInput);
-    // $(".service").text(service);
-    // $(".date").text(date);
-    // $(".time").text(time);
 
-    $("#answer").show();
+var add = function(eat, sweet, song, transit, fun) {
+  return eat + sweet + song + transit + fun;
+};
 
+
+
+$(document).ready(function() {
+  console.log("Hello!")
+  $("form#favoriteColor").submit(function(event) {
     event.preventDefault();
-  })
+    var eat = parseInt($("input:radio[name=eat]:checked").val());
+    //console.log(color)
+    var sweet = parseInt($("input:radio[name=sweet]:checked").val());
+    var sing = parseInt($("input:radio[name=sing]:checked").val());
+    var transit = parseInt($("input:radio[name=transit]:checked").val());
+    var fun = parseInt($("input:radio[name=fun]:checked").val());
+    var result = add(eat, sweet, sing, transit, fun);
+    console.log(result)
+    if (result <= 8) {
+      $("#resultBeer").text("You're sippin' on a Pilsner!");
+    } else if (result <= 15) {
 
+      $("#resultBeer").text("You're sippin' on an IPA!");
+    } else if (result <= 25) {
+
+      $("#resultBeer").text("You're sippin' on an Imperial Stout!");
+    }
+
+  });
+  // $("form#calculator").submit(function() {
+  //   event.preventDefault();
+  //   var number1 = parseInt($("#input1").val());
+  //   var number2 = parseInt($("#input2").val());
+  //   var operator = $("input:radio[name=operator]:checked").val();
+  //   var result;
+  //   if (operator === "add") {
+  //     result = add(number1, number2);
+  //   } else if (operator === "subtract") {
+  //     result = subtract(number1, number2);
+  //   } else if (operator === "multiply") {
+  //     result = multiply(number1, number2);
+  //   } else if (operator === "divide") {
+  //     result = divide(number1, number2);
+  //   }
+  // });
+  //
 });

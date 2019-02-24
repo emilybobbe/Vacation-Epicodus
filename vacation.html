@@ -4,135 +4,148 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="css/styles.css" type="text/css">
-    <script src ="js/jquery-3.3.1.js"></script>
+    <script src="js/jquery-3.3.1.js"></script>
     <script src="js/scripts.js"></script>
     <title>Vacation Quiz</title>
   </head>
   <body>
     <div class="container">
-    <div class="jumbotron">
-      <h1>Vacation Quiz!</h1>
-        <p>Feeling tired from work and wanting to plan your next vacation? Take the quiz below to see where you should go!</p>
-    </div>
-
-      <form id="content">
-        <h2>It's Friday night and you are craving...</h2>
-          <div class="radio">
-            <label>
-              <input type="radio" name="food" value="pizza" checked>
-              Pizza
-            </label>
+      <div class="jumbotron">
+        <h1 class="display-4">Vacation Quiz!</h1>
+        <p class="lead">Feeling tired from work and wanting to plan your next vacation? Take the quiz below to see where you should go!</p>
+      </div>
+      <div id="blanks">
+        <form id="favoriteColor">
+          <p>It's Friday night and you are craving...</p>
+          <div class="radio-test">
+            <div class="radio">
+              <label>
+                <input type="radio" name="eat" value="3" checked>
+                Pizza
+              </label>
+            </div>
+            <div class="radio">
+              <label>
+                <input type="radio" name="eat" value="5">
+                Nachos
+              </label>
+            </div>
+            <div class="radio">
+              <label>
+                <input type="radio" name="eat" value="1">
+                Fish and Chips
+              </label>
+            </div>
           </div>
-          <div class="radio">
-            <label>
-              <input type="radio" name="food" value="Nachos">
-              Nachos
-            </label>
-          </div>
-          <div class="radio">
-            <label>
-              <input type="radio" name="food" value="fish">
-              Fish and Chips
-            </label>
-          </div>
 
-    <form id="content">
-      <h2>Choose a dessert:</h2>
-        <div class="radio">
-          <label>
-            <input type="radio" name="dessert" value="tiramisu" checked>
-            Tiramisu
-          </label>
-        </div>
-        <div class="radio">
-          <label>
-            <input type="radio" name="dessert" value="churro">
-            Churros
-          </label>
-        </div>
-        <div class="radio">
-          <label>
-            <input type="radio" name="dessert" value="pie">
-            Banoffee Pie
-          </label>
-        </div>
-        </select>
+          <br><br>
 
-    <form id="content">
-      <h2>What is your go-to karaoke song?</h2>
-        <div class="radio">
-          <label>
-            <input type="radio" name="song" value="amore" checked>
-            That's Amore by Dean Martin
-          </label>
-        </div>
-        <div class="radio">
-          <label>
-            <input type="radio" name="song" value="tequila">
-            Tequila by The Champs
-          </label>
-        </div>
-        <div class="radio">
-          <label>
-            <input type="radio" name="song" value="beatles">
-            Any Beatles song
-          </label>
-        </div>
-        </select>
+            <p>Choose a dessert:</p>
+            <div class="radio-test">
+              <div class="radio">
+                <label>
+                  <input type="radio" name="sweet" value="5" checked>
+                  Churros
+                </label>
+              </div>
+              <div class="radio">
+                <label>
+                  <input type="radio" name="sweet" value="3">
+                  Tiramisu
+                </label>
+              </div>
+              <div class="radio">
+                <label>
+                  <input type="radio" name="sweet" value="1">
+                  Banoffee Pie
+                </label>
+              </div>
+            </div>
 
-    <form id="content">
-      <h2>Choose your favorite mode of travel:</h2>
-        <div class="radio">
-          <label>
-            <input type="radio" name="travel" value="plane" checked>
-            Plane
-          </label>
-        </div>
-        <div class="radio">
-          <label>
-            <input type="radio" name="travel" value="cruise">
-            Cruise ship
-          </label>
-        </div>
-        <div class="radio">
-          <label>
-            <input type="radio" name="travel" value="train">
-            Trains
-          </label>
-        </div>
-        </select>
+            <br><br>
 
-    <form id="content">
-      <h2>What is your ideal activity while on vacation?</h2>
-        <div class="radio">
-          <label>
-            <input type="radio" name="activity" value="food" checked>
-            Eating alllllll of the foods
-          </label>
-        </div>
-        <div class="radio">
-          <label>
-            <input type="radio" name="activity" value="snorkle">
-            Snorkling in the ocean
-          </label>
-        </div>
-        <div class="radio">
-          <label>
-            <input type="radio" name="activity" value="museum">
-            Visiting museums
-          </label>
-        </div>
-        </select>
+              <p>What is your go-to karaoke song?</p>
+              <div class="radio-test">
+                <div class="radio">
+                  <label>
+                    <input type="radio" name="sing" value="3" checked>
+                    That's Amore by Dean Martin
+                  </label>
+                </div>
+                <div class="radio">
+                  <label>
+                    <input type="radio" name="sing" value="5">
+                    Tequila by The Champs
+                  </label>
+                </div>
+                <div class="radio">
+                  <label>
+                    <input type="radio" name="sing" value="1">
+                    Any Beatles song
+                  </label>
+                </div>
+              </div>
 
-        <button type="submit" name="button">Submit</button>
+              <br><br>
 
-             </form>
+                <p>Choose your favorite mode of travel:</p>
+                <div class="radio-test">
+                  <div class="radio">
+                    <label>
+                      <input type="radio" name="transit" value="5" checked>
+                      Cruise Ship
+                    </label>
+                  </div>
+                  <div class="radio">
+                    <label>
+                      <input type="radio" name="transit" value="1">
+                      Trains
+                    </label>
+                  </div>
+                  <div class="radio">
+                    <label>
+                      <input type="radio" name="transit" value="3">
+                      Planes
+                    </label>
+                  </div>
+                </div>
+
+                <br><br>
+
+                  <p>What is your ideal activity while on vacation?</p>
+                  <div class="radio-test">
+                    <div class="radio">
+                      <label>
+                        <input type="radio" name="fun" value="5" checked>
+                        Snorkling in the ocean
+                      </label>
+                    </div>
+                    <div class="radio">
+                      <label>
+                        <input type="radio" name="fun" value="3">
+                        Eating alllllll of the foods
+                      </label>
+                    </div>
+                    <div class="radio">
+                      <label>
+                        <input type="radio" name="fun" value="1">
+                        Visiting museums
+                      </label>
+                    </div>
+                  </div>
+                  <button type="submit" class="btn btn-info">Submit</button>
+                  </form>
+                  <br><br>
 
 
-       <div id="answer">
-       <h1>You should go on a vacation to....</h1>
-           <p><span class="answer"></span></p><br>
-           <p>Enjoy your trip!!!</p>
+      </div><br>
+
+      <div id="outputBeer">
+        <h2><span id="resultBeer"></span></h2>
+        <br><br>
+
+
+      </div>
 
     </div>
   </body>
