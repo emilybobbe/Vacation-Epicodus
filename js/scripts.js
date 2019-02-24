@@ -1,5 +1,4 @@
 $(document).ready(function(){
-  console.log("did load");
   $("#content").submit(function(){
     var food = $("input:radio[name=food]:checked").val();
     // console.log(foodInput);
